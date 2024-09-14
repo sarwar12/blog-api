@@ -13,3 +13,7 @@ Route::get("/test", function(){
 });
 
 Route::get('students', [StudentController::class, 'StudentList']);
+Route::post('add', [StudentController::class, 'addStudent']);  
+Route::put('update', [StudentController::class, 'updateStudent']);  
+Route::delete('delete/{id}', [StudentController::class, 'deleteStudent']);  
+Route::get('search/{name}', [StudentController::class, 'searchStudent']);  
