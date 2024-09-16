@@ -23,3 +23,4 @@ Route::group(['middleware'=>"auth:sanctum"], function(){
     Route::resource('member', MemberController::class);
 });
 
+//Route::get('students', [StudentController::class, 'StudentList']);
